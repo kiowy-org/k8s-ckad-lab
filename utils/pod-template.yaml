@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kuard
+spec:
+  volumes:
+    - name: <nom_du_volume>
+      # TODO
+  containers:
+    - name: <nom_du_conteneur>
+      image: gcr.io/kuar-demo/kuard-amd64:blue
+      ports:
+        - name: <nom_du_port>
+          # TODO
+      resources:
+        requests:
+          # TODO
+        limits:
+          # TODO
+      volumeMounts:
+        - name: "kuard-data"
+          # TODO
+      livenessProbe:
+          # TODO
+      readinessProbe:
+          # TODO
