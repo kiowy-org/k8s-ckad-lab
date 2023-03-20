@@ -1,6 +1,6 @@
-## 6. Statefulsets
+# 7. Statefulsets
 
-### Exercice 13
+## Exercice 1
 
 Créez un Statefulset MongoDB.
 
@@ -28,8 +28,7 @@ rs.add("mongo-2.mongo:27017");
 
 Que se passe t'il si on scale notre StatefulSet ?
 
-
-### Exercice 14
+## Exercice 2
 
 Nous allons corriger notre statefulset, afin qu'il supporte le scaling.
 
@@ -45,7 +44,7 @@ curl -O https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/pri
 cat primer-dataset.json | kubectl exec -it mongo-0 -- mongoimport --db test --collection restaurants --drop
 ```
 
-Enfin, testez que vous pouvez accéder aux données : 
+Enfin, testez que vous pouvez accéder aux données :
 
 ```bash
 kubectl exec -it mongo-0 -- mongo test --eval "db.restaurants.find()"

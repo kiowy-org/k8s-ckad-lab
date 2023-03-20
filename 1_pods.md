@@ -89,7 +89,11 @@ Créez un déploiement d'un pod busybox à 3 replicas ouverts sur le port `8080`
     <summary>On peut aller plus vite 🤫</summary>
 
 ```bash
-kubectl create deployment --replicas=2 --image=busybox --port=8080 --labels='app=busy,ver=2,env=dev' --dry-run=client -o yaml > deployment_kuard.yaml
+kubectl create deployment mydeployment --replicas=2 --image=busybox --port=8080 --dry-run=client -o yaml > deployment_busybox.yaml
+
+# Ou 
+
+kubectl run mypod --image=busybox --port=8080 --labels='app=busy,ver=2,env=dev' --dry-run=client -o yaml > pod_busybox.yaml
 ```
 
 </details><br/>

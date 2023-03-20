@@ -1,6 +1,6 @@
-## 5. ConfigMaps et Secrets
+# 5. ConfigMaps et Secrets
 
-### Exercice 11
+## Exercice 1
 
 Commencez par créer un configmap incluant un fichier de config, et des paramètres.
 
@@ -33,7 +33,7 @@ kubectl apply -f ./3_configmaps_et_secrets/2_kuard_config.yaml
 
 Vérifiez dans kuard les valeurs présentes dans l'environnement et sur le filesystem.
 
-### Exercice 12
+## Exercice 2
 
 Créez un secret contenant un certificat, et montez le dans kuard.
 

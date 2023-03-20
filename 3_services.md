@@ -1,4 +1,4 @@
-## 3. Services
+# 3. Services
 
 Dans cette section, nous allons découvrir les services, et les readiness probes.
 
@@ -67,7 +67,7 @@ kubectl port-forward svc/kuard 8080:8080
 
 </details>
 
-### Readiness probe
+## Readiness probe
 
 Le mécanisme de readiness probe permet d'indiquer à K8S quand envoyer du traffic vers le pod.
 
@@ -92,7 +92,7 @@ Rendez vous sur le pod kuard, dans l'onglet readiness, changez le code de retour
 
 (Vous pouvez observer les pods présents dans le load balancing du service via la commane `kubectl get endpoints kuard -w`).
 
-### NodePort
+## NodePort
 
 Pour accéder aux pods depuis l'extérieur, on peut utiliser le service de type `NodePort`.
 
@@ -102,7 +102,7 @@ Utilisez ensuite la commande `kubectl get svc kuard` afin d'obtenir le numéro d
 
 Tentez ensuite d'accéder à http://\<node-ip\>:\<nodeport-port\> , rafraichissez la page pour vérifier que le load balancing fonctionne toujours.
 
-### LoadBalancer
+## LoadBalancer
 
 Modifiez de nouveau le service, en indiquant `LoadBalancer` dans le champ `spec.type`. Attendez quelques minutes, puis observez le résultat de la commande `kubectl get svc kuard`, que constatez vous ? Tentez d'accéder à kuard grâce aux informations obtenues.
 
