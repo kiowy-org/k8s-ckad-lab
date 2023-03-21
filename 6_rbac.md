@@ -143,3 +143,5 @@ curl localhost:8001/api/v1/pods
 curl localhost:8001/api/v1/namespaces/<prenom>/pods
 curl localhost:8001/api/v1/namespaces/<autre_prenom>/pods 
 ```
+
+Section suivante, [les Statefulsets](7_statefulsets.md)

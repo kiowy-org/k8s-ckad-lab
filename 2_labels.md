@@ -26,4 +26,4 @@ kubectl label pods kuard "canary-" # Retire un label
 
 Vous pouvez également annoter votre pod, avec `kubectl annotate pod kuard k8s-training/owner=<prenom>`. Vous pouvez vérifier votre annotation avec `kubectl describe`.
 
-Section suivante, [les services](3_services.md).
+Section suivante, [les services](3_services.md)

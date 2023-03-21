@@ -49,3 +49,5 @@ Enfin, testez que vous pouvez accéder aux données :
 ```bash
 kubectl exec -it mongo-0 -- mongo test --eval "db.restaurants.find()"
 ```
+
+Section suivante, [Debug](8_debug.md)

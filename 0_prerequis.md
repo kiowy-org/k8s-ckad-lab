@@ -49,4 +49,4 @@ Voilà, désormais si vous exécutez une commande `kubectl`, celle-ci sera exéc
 * Pour les fans de GUI : Kubernetes ne dispose plus par défaut d'une interface graphique, je vous conseil le projet [k9s](https://k9scli.io/) qui est un GUI dans le terminal.
 * Si vous préferez un GUI natif, regardez du coté de [lens](https://k8slens.dev/)
 
-Sections suivante, [les Pods](1_pods.md).
+Sections suivante, [les Pods](1_pods.md)

@@ -70,4 +70,4 @@ Créez un Pod utilisant ce secret, vérifiez le résultat dans kuard
 kubectl apply -f ./configmaps_et_secrets/kuard-secret.yaml
 ```
 
-Section suivante, [les Statefulsets](6_statefulsets.md)
+Section suivante, [les RBAC](6_rbac.md)

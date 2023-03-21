@@ -98,4 +98,5 @@ kubectl run mypod --image=busybox --port=8080 --labels='app=busy,ver=2,env=dev' 
 
 </details><br/>
 
-Section suivante, [les labels](2_labels.md).
+Section suivante, [les labels](2_labels.md)
+
