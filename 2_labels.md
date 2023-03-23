@@ -5,9 +5,6 @@
 Ajoutez un label `canary=true` à votre pod kuard. 
 Utilisez l'option `-l` de `kubectl get` pour vérifier que votre label permet bien de trier les pods.
 
-<details>
-    <summary>Aide</summary>
-
 ```bash
 kubectl get pods --show-labels # Affiche les labels sur une liste
 kubectl label pods kuard "canary=true" 
@@ -17,8 +14,6 @@ kubectl get pods -l canary=false
 
 kubectl label pods kuard "canary-" # Retire un label
 ```
-
-</details>
 
 ## Exercice 2 : Labels aerobics
 
@@ -32,6 +27,7 @@ for i in `seq 1 5`; do kubectl run nginx$i --image=nginx -l app=v1 ; done
 ```
 
 </details>
+<br>
 
 Effectuer ensuite les manipulations suivantes en utilisant une seule commande par instruction :
 
