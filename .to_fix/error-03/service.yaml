@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: what-a-service
+spec:
+  selector:
+    app-of: error-03
+  ports:
+    - protocol: TCP
+      port: 8090
+      targetPort: 8090
