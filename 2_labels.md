@@ -45,6 +45,7 @@ Effectuer ensuite les manipulations suivantes en utilisant une seule commande pa
 12. Afficher tous les pods et leurs labels séparés par colonne.
 13. Supprimer tous les pods créer dans cet exercice.
 
+> Avant de changer de section, supprimer tous les pods créer durant cette exercices (en 2 commmandes maximum 😉).
+
 Section suivante, [les services](3_services.md)
 
-> Avant de changer de section, supprimer tous les pods créer durant cette exercices (en 2 commmandes maximum 😉).
