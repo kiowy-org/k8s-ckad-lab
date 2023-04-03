@@ -55,6 +55,8 @@ Quelques options utiles :
 
 Pour finir, supprimez le pod depuis son fichier grâce à la commande `kubectl delete -f ./exercices/kuard-pod.yaml`.
 
+---
+
 ## Pod kuard complet
 
 À l'aide du fichier `utils/pod_template.yaml`, regroupez toutes les spécifications abordées pour créer un pod `kuard` ayant:
