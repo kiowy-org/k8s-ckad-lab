@@ -67,7 +67,7 @@ Pour finir, supprimez le pod depuis son fichier grâce à la commande `kubectl d
 * Une sonde de readiness en `/ready`
 * Le port `8080` ouvert en `TCP`
 * Le container principal qui accède au volume `kuard-data` via le dossier `/data`
-* Un volume `kuard-data` sur le server `my.nfs.server.local`
+* Un volume `kuard-data` en `EmptyDir`
 * Demande `100m` de puissance de calcul et `128Mio` de mémoire.
 * Ne dépasse pas `250m` de puissance de calcul et `256Mio` de mémoire.
 
