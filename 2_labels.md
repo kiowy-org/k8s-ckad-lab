@@ -43,7 +43,6 @@ Effectuer ensuite les manipulations suivantes en utilisant une seule commande pa
 10. Retirer l'annotation `app=v2` du pod `nginx2`.
 11. Afficher uniquement les pods `prerelease`, peux importe la valeur.
 12. Afficher tous les pods et leurs labels séparés par colonne.
-13. Supprimer tous les pods créer dans cet exercice.
 
 > Avant de changer de section, supprimer tous les pods créer durant cette exercices (en 2 commmandes maximum 😉).
 
