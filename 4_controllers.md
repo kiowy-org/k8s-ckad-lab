@@ -82,6 +82,8 @@ Nous allons ensuite créer des jobs, alimentés par une queue de travail (prése
 
 ### Exercice 5
 
+Ligne par ligne, executez et expliquez les commandes suivantes : 
+
 ```bash
 kubectl apply -f ./utils/example_jobs-1-queue.yaml
 
@@ -95,5 +97,7 @@ curl localhost:8080/memq/server/stats
 
 kubectl apply -f ./utils/example_jobs-3-consumer.yaml
 ```
+
+Que pouvez-vous déduire de l'option `-o jsonpath` ? A quoi sert-il ? 
 
 Section suivante, [la configuration et les secrets](5_configmaps_et_secrets.md).
