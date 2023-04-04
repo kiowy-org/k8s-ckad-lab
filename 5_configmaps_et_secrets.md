@@ -5,7 +5,7 @@
 Commencez par créer un configmap incluant un fichier de config, et des paramètres (objectif: une seule commande 😉).
 
 <details>
-<summary>Aide</summary>
+<summary>Solution</summary>
 
 ```bash
 kubectl create configmap my-config \
@@ -75,7 +75,7 @@ kubectl apply -f ./configmaps_et_secrets/kuard-secret.yaml
 Donner la valeur en clair du champs `kuard.key` (objectif: une seule commande (encore) 😉)
 
 <details>
-<summary>Aide</summary>
+<summary>Solution</summary>
 
 ```bash
 kubectl get secret kuard-tls -o jsonpath='{.data.kuard\.key}' | base64 -d
