@@ -16,14 +16,14 @@ k create deployment kuard --image=gcr.io/kuar-demo/kuard-amd64:blue
 Explorez son fonctionnement via les commandes suivantes :
 
 ```shell
-kubectl describe rs kuard 
+kubectl describe deploy kuard 
 
-kubectl scale replicaset kuard --replicas=4 # Vous pouvez ensuite lister les pods pour vérifier que ça fonctionne
+kubectl scale deploy kuard --replicas=4 # Vous pouvez ensuite lister les pods pour vérifier que ça fonctionne
 
-kubectl autoscale rs kuard --min=2 --max=5 --cpu-percent=80
+kubectl autoscale deploy kuard --min=2 --max=5 --cpu-percent=80
 kubectl get hpa # Vous pouvez également describe cet objet
 
-kubectl delete rs kuard
+kubectl delete deploy kuard
 ```
 
 ### Exercice 2
