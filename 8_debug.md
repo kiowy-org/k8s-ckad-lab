@@ -2,7 +2,7 @@
 
 Le clusters c'est rempli de erreurs et de bug dans déploiement des applications ! 😱
 
-Dans chaque namespace `error-*` se trouve une erreur identifier là et effectuer les actions nécéssaires à sa resolution.
+Dans chacun des namespaces `error-*` se trouve une erreur identifier là et effectuer les actions nécessaires à sa résolution.
 
 ## Commandes qui pourront vous aider à avoir de l'information
 
