@@ -2,10 +2,11 @@
 
 ## Exercice 1
 
-Commencez par créer un configmap incluant un fichier de config, et des paramètres.
+Commencez par créer un configmap incluant un fichier de config, et des paramètres (objectif: une seule commande 😉).
 
 <details>
 <summary>Aide</summary>
+
 ```bash
 kubectl create configmap my-config \
 --from-file=./configmaps_et_secrets/simple_config.txt \
@@ -26,8 +27,9 @@ Enfin, créez un pod qui utilise ce configmap.
 
 <details>
 <summary>Aide</summary>
+
 ```bash
-kubectl apply -f ./3_configmaps_et_secrets/2_kuard_config.yaml
+kubectl apply -f ./configmaps_et_secrets/2_kuard_config.yaml
 ```
 </details>
 
@@ -69,5 +71,16 @@ Créez un Pod utilisant ce secret, vérifiez le résultat dans kuard
 ```bash
 kubectl apply -f ./configmaps_et_secrets/kuard-secret.yaml
 ```
+
+Donner la valeur en clair du champs `kuard.key` (objectif: une seule commande (encore) 😉)
+
+<details>
+<summary>Aide</summary>
+
+```bash
+kubectl get secret kuard-tls -o jsonpath='{.data.kuard\.key}' | base64 -d
+```
+
+</details>
 
 Section suivante, [les RBAC](6_rbac.md)
