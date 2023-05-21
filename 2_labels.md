@@ -44,7 +44,7 @@ Effectuer ensuite les manipulations suivantes en utilisant une seule commande pa
 11. Afficher uniquement les pods `prerelease`, peux importe la valeur.
 12. Afficher tous les pods et leurs labels séparés par colonne.
 
-> Avant de changer de section, supprimer tous les pods créer durant cette exercices (en 2 commmandes maximum 😉).
+> Avant de changer de section, supprimer tous les pods créer durant cet exercice (en 2 commmandes maximum 😉).
 
 Section suivante, [les services](3_services.md)
 
