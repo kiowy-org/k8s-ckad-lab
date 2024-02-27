@@ -35,13 +35,13 @@ Effectuer ensuite les manipulations suivantes en utilisant une seule commande pa
 2. Ajouter le label `img=nginx` à tous les pods avec le label `app=v1`.
 3. Changer le label `app` pour `app=v2` pour `nginx2` et `nginx3`.
 4. Changer le label `app` pour `app=v3` pour `nginx4` et `nginx5`.
-5. Afficher les différentes valeurs du label `app` de chaque pods dans une colonne dédié du `kubectl get` ( option `-L`).
+5. Afficher les différentes valeurs du label `app` de chaque pod dans une colonne dédiée du `kubectl get` ( option `-L`).
 6. Ajouter le label `version=old` aux pods avec les labels `app=v1` et `app=v2`.
 7. Annoter les pods avec `k8s-training/owner=<prenom>`.
 8. Supprimer le label `version` des pods avec le label `app=v2`.
-9. Ajouter le label `prerelease=alpha` au pods `nginx4` et `nginx5`.
+9. Ajouter le label `prerelease=alpha` aux pods `nginx4` et `nginx5`.
 10. Retirer l'annotation `app=v2` du pod `nginx2`.
-11. Afficher uniquement les pods `prerelease`, peux importe la valeur.
+11. Afficher uniquement les pods `prerelease`, peu importe la valeur.
 12. Afficher tous les pods et leurs labels séparés par colonne.
 
 > [!TIP]
