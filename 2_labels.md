@@ -40,7 +40,7 @@ Effectuer ensuite les manipulations suivantes en utilisant une seule commande pa
 7. Annoter les pods avec `k8s-training/owner=<prenom>`.
 8. Supprimer le label `version` des pods avec le label `app=v2`.
 9. Ajouter le label `prerelease=alpha` aux pods `nginx4` et `nginx5`.
-10. Retirer l'annotation `app=v2` du pod `nginx2`.
+10. Retirer l'annotation `k8s-training/owner=<prenom>` du pod `nginx2`.
 11. Afficher uniquement les pods `prerelease`, peu importe la valeur.
 12. Afficher tous les pods et leurs labels séparés dans des colonnes.
 
