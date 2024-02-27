@@ -42,7 +42,7 @@ Effectuer ensuite les manipulations suivantes en utilisant une seule commande pa
 9. Ajouter le label `prerelease=alpha` aux pods `nginx4` et `nginx5`.
 10. Retirer l'annotation `app=v2` du pod `nginx2`.
 11. Afficher uniquement les pods `prerelease`, peu importe la valeur.
-12. Afficher tous les pods et leurs labels séparés par colonne.
+12. Afficher tous les pods et leurs labels séparés dans des colonnes.
 
 > [!TIP]
 > Avant de changer de section, supprimer tous les pods créer durant cet exercice (en 2 commmandes maximum 😉).
