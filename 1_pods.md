@@ -71,6 +71,7 @@ Pour finir, supprimez le pod depuis son fichier grâce à la commande `kubectl d
 * Demande `100m` de puissance de calcul et `128Mio` de mémoire.
 * Ne dépasse pas `250m` de puissance de calcul et `256Mio` de mémoire.
 
+> [!NOTE]
 > Pour la ***liveness*** et la ***readiness*** probes, Kubernetes doit commencer à la requêter 5s après le lancement du conteneur, toutes les 10s avec 1s de timeout ( erreur confirmée après trois échecs ).
 
 ## Multiple container pod
