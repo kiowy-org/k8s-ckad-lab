@@ -9,8 +9,9 @@ spec:
   containers:
     - name: <nom_du_conteneur>
       image: gcr.io/kuar-demo/kuard-amd64:blue
-      ports:
+      containerPorts:
         - name: <nom_du_port>
+          port: <numero_du_port>
           # TODO
       resources:
         requests:
