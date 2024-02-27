@@ -90,7 +90,7 @@ Validez la modification (dans vi : `Esc` + `:wq`)
 
 Rendez vous sur le pod kuard, dans l'onglet readiness, changez le code de retour de la readiness probe et vérifiez le comportement sur kubernetes.
 
-(Vous pouvez observer les pods présents dans le load balancing du service via la commane `kubectl get endpoints kuard -w`).
+(Vous pouvez observer les pods présents dans le load balancing du service via la commande `kubectl get endpoints kuard -w`).
 
 ## NodePort
 
