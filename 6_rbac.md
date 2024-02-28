@@ -21,7 +21,7 @@ kubectl exec -it <votre-pod> -n <ns> -- sh
 
 ## 2. Lister les services depuis vos pods
 
-Depuis vos pods, essayez de lister les services du namespace d'un autre namespace :
+Depuis vos pods, essayez de lister les services du namespace :
 
 ```shell
 curl localhost:8001/api/v1/namespaces/foo/services
