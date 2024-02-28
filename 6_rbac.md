@@ -24,7 +24,7 @@ kubectl exec -it <votre-pod> -n <ns> -- sh
 Depuis vos pods, essayez de lister les services du namespace :
 
 ```shell
-curl localhost:8001/api/v1/namespaces/foo/services
+curl localhost:8001/api/v1/namespaces/<prenom>/services
 ```
 
 Quel retour obtenez vous de l'API ?
