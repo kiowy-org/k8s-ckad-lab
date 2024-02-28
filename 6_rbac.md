@@ -31,7 +31,7 @@ Quel retour obtenez vous de l'API ?
 
 ## 3. Autoriser le pod à lister les services
 
-Afin que le pod du namespace de votre namespace puisse lire les services de vote namespace, nous devons définir un rôle.
+Afin que le pod dans votre namespace puisse lire les services de vote namespace, nous devons définir un rôle.
 
 Adaptez le code suivant, afin d'autoriser la lecture d'un service, ainsi que lister les services.
 
