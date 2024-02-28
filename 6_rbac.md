@@ -133,7 +133,7 @@ curl localhost:8001/api/v1/namespaces/<autre_prenom>/pods
 Maintenant supprimez le ClusterRoleBinding, puis créez un RoleBinding dans le namespace:
 
 ```shell
-kubectl create rolebinding view-test --clusterrole=view --serviceaccount=<prenom>:default -n foo
+kubectl create rolebinding view-test --clusterrole=view --serviceaccount=<prenom>:default -n <prenom>
 ```
 
 Ré-executez les commandes suivantes :
