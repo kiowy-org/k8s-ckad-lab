@@ -8,14 +8,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:kiowy-org/k8s-ckad-lab.git
+    repoURL: https://github.com/kiowy-org/k8s-ckad-lab.git
     targetRevision: HEAD
     path: .to_fix/error-01
 
   syncPolicy:
     automated:
-      prune: true
-      selfHeal: true
     syncOptions:
     - CreateNamespace=true
 
@@ -23,3 +21,68 @@ spec:
     namespace: error-01
     server: https://kubernetes.default.svc
 ---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: error-02
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kiowy-org/k8s-ckad-lab.git
+    targetRevision: HEAD
+    path: .to_fix/error-02
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+  destination:
+    namespace: error-02
+    server: https://kubernetes.default.svc
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: error-03
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kiowy-org/k8s-ckad-lab.git
+    targetRevision: HEAD
+    path: .to_fix/error-03
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+  destination:
+    namespace: error-03
+    server: https://kubernetes.default.svc
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: error-04
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kiowy-org/k8s-ckad-lab.git
+    targetRevision: HEAD
+    path: .to_fix/error-04
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+  destination:
+    namespace: error-04
+    server: https://kubernetes.default.svc
