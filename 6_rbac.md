@@ -46,7 +46,7 @@ Afficher le manifest resultant de la commande.
 Maintenant que le rôles est en place, vous devez le binder à un ServiceAccount. Utilisez la commande suivante pour attacher votre rôle au compte de service par défaut :
 
 ```shell
-kubectl create rolebinding test --role=service-reader --serviceaccount=foo:default -n <prenom>
+kubectl create rolebinding test --role=service-reader --serviceaccount=<prenom>:default -n <prenom>
 ```
 
 Vous pouvez observer le détail du RoleBinding via `kubectl get rolebinding test -n <prenom> -o yaml`.
