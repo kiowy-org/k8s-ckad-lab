@@ -54,7 +54,7 @@ Vous pouvez observer le détail du RoleBinding via `kubectl get rolebinding test
 Maintenant, dans le pod de votre namespace, exécutez la commande suivante.
 
 ```shell
-curl localhost:8001/api/v1/namespaces/foo/services
+curl localhost:8001/api/v1/namespaces/<prenom>/services
 ```
 
 <details>
