@@ -7,7 +7,13 @@ Créez un Statefulset MongoDB.
 Appliquez le fichier `./stateful_set/1-mongo-simple.yaml` pour créer l'objet StatefulSet.
 Appliquez ensuite le fichier `./stateful_set/2-mongo-service.yaml` afin de créer le headless service.
 
-Vérifiez que les pods démarrent bien dand l'odre. 
+> [!NOTE]
+> Un [Headless service](https://kubernetes.io/fr/docs/concepts/services-networking/service/#headless-services) est un service sans Cluster IP.
+> 
+> Particulièrement utile pour s'interfacer d'autre système de découverte de pair, le headless service n'est pas géré par le `kube-proxy`.
+> Aucun `LoadBalancing` ou proxy n'est effectué par Kubernetes pour ces services.
+
+Vérifiez que les pods démarrent bien dans l'ordre. 
 
 Instanciez un pod kuard (`kubectl run kuard --image=gcr.io/kuar-demo/kuard-amd64:blue`), faites un `port-forward` et tentez une résolution DNS de :
 
