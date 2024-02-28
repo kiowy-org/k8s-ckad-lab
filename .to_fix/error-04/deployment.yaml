@@ -19,7 +19,7 @@ spec:
           - containerPort: 8080
             name: http
             protocol: TCP
-          volumeMount:
+          volumeMounts:
             - name: test
               mountPath: /config
       volumes:
