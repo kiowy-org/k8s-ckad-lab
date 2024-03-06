@@ -61,7 +61,7 @@ curl localhost:8001/api/v1/namespaces/<prenom>/services
     <summary>Execution direct 🤫</summary>
 
 ```bash
-kubectl exec -it <votre-pod> -n <ns> -- sh curl localhost:8001/api/v1/namespaces/foo/services
+kubectl exec -it <votre-pod> -n <ns> -- curl localhost:8001/api/v1/namespaces/foo/services
 ```
 
 </details><br/>
