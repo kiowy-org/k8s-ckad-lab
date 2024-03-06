@@ -31,14 +31,14 @@ Quel retour obtenez vous de l'API ?
 
 ## 3. Autoriser le pod à lister les services
 
-Afin que le pod dans votre namespace puisse lire les services de vote namespace, nous devons définir un rôle.
+Afin que le pod dans votre namespace puisse lire les services de votre namespace, nous devons définir un rôle.
 
 Adaptez le code suivant, afin d'autoriser la lecture d'un service, ainsi que lister les services.
 
 Utilisez directement kubectl pour créer le rôle (n'oubliez pas de remplacer les ?) :
 
 ```shell
-kubectl create role service-reader --verb=? --verb=? --resource=? -n bar
+kubectl create role service-reader --verb=? --verb=? --resource=? -n <prenom>
 ```
 
 Afficher le manifest resultant de la commande.
@@ -61,7 +61,7 @@ curl localhost:8001/api/v1/namespaces/<prenom>/services
     <summary>Execution direct 🤫</summary>
 
 ```bash
-kubectl exec -it <votre-pod> -n <ns> -- curl localhost:8001/api/v1/namespaces/foo/services
+kubectl exec -it <votre-pod> -n <ns> -- curl localhost:8001/api/v1/namespaces/<prenom>/services
 ```
 
 </details><br/>
