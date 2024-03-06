@@ -86,3 +86,25 @@ spec:
   destination:
     namespace: error-04
     server: https://kubernetes.default.svc
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: error-05
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kiowy-org/k8s-ckad-lab.git
+    targetRevision: HEAD
+    path: .to_fix/error-05
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+  destination:
+    namespace: error-05
+    server: https://kubernetes.default.svc
