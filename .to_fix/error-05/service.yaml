@@ -4,7 +4,7 @@ metadata:
   name: what-a-service
 spec:
   selector:
-    app-of: error-01
+    app-of: error-05
   ports:
     - protocol: TCP
       port: 8080

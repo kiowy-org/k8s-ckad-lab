@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app-of: error-01
+      app-of: error-05
   replicas: 2
   template:
     metadata:
       labels:
-        app-of: error-01
+        app-of: error-05
     spec:
       containers:
         - image: gcr.io/kuar-demo/kuard-amd64:blue
