@@ -107,3 +107,30 @@ Tentez ensuite d'accéder à http://\<node-ip\>:\<nodeport-port\> , rafraichisse
 Modifiez de nouveau le service, en indiquant `LoadBalancer` dans le champ `spec.type`. Attendez quelques minutes, puis observez le résultat de la commande `kubectl get svc kuard`, que constatez vous ? Tentez d'accéder à kuard grâce aux informations obtenues.
 
 Section suivante, [les controllers](4_controllers.md)
+
+## Ingress
+
+Complétez la règle d'ingress suivante en ajoutant le chemin `/k8s-training` pour qu'il renvoit sur le port `8080` du service `web-app-service`.
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-wildcard-host
+spec:
+  rules:
+  - host: "foo.bar.com"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/bar"
+        backend:
+          service:
+            name: service1
+            port:
+              number: 80
+```
+
+## NetworkPolicy
+
+[Ça ce passe ici. 👈](./network_policies)
