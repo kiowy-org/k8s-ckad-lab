@@ -3,6 +3,7 @@
 install local :
 
 ```sh
+alias k=kubectl
 k apply -f .to_fix/namespaces.yaml
 k apply -k .to_fix/error-01 -n error-01
 k apply -k .to_fix/error-02 -n error-02
