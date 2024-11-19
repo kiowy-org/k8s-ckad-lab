@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: error-01
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: error-02
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: error-03
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: error-04
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: error-05
+---
+resources:
+  - ./error-01
+  - ./error-02
+  - ./error-03
+  - ./error-04
+  - ./error-05
