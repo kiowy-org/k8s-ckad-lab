@@ -1,4 +1,5 @@
 resources:
+  - ./namespaces.yaml
   - ./error-01
   - ./error-02
   - ./error-03
