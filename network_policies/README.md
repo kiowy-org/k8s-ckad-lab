@@ -5,11 +5,13 @@
 
 ## Mise en place
 
+Appliquez le fichier `netpol.yaml` au cluster, il va créer dans votre namespace une application contenant un pod `web-app`, un pod `mysql-db` et les services pour les exposer.
+
 ```bash
 kubectl apply -f netpol.yaml
 ```
 
-Le fichier `netpol.yaml` applique au cluster dans votre namespace une [NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/) qui bloque tout les trafics (entrant et sortant).
+Le fichier `netpol.yaml` applique également au cluster dans votre namespace une [NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/) qui bloque tout les trafics (entrant et sortant).
 
 ```yaml
 apiVersion: networking.k8s.io/v1
