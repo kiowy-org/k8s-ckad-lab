@@ -1,5 +1,16 @@
 # Environnement à débugger
 
+install local :
+
+```sh
+k apply -f .to_fix/namespaces.yaml
+k apply -k .to_fix/error-01 -n error-01
+k apply -k .to_fix/error-02 -n error-02
+k apply -k .to_fix/error-03 -n error-03
+k apply -k .to_fix/error-04 -n error-04
+k apply -k .to_fix/error-05 -n error-05
+```
+
 Les environnements `error-*` sont en erreur à propos. Ils sont conçus pour être résolu impérativement via la commande `kubectl`. Merci de ne pas corriger les fichiers de ce dossier.
 
 > Ce dossier est destiné au formatteur pour la mise en place des environnement via ArgoCD.
