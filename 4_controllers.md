@@ -1,3 +1,14 @@
+> [!caution]
+> **⚠️ Alerte de securité**
+>
+> Des instances d'un pods douteux se sont déployés dans vos namespaces mais aucun comportement curieux n'a été observé pour l'instant.
+> Afin d'assurer la sécurité de vos namespaces, assurez-vous que les pods du déploiment `fishy-pod` :
+> * utilisent le userID `10000`
+> * ne puissent pas s'exécuter en tant que `root`
+> * ont la capacité `NET_ADMIN` et de `SYS_TIME`
+
+---
+
 ## 4. Controllers
 
 ### Exercice 1
