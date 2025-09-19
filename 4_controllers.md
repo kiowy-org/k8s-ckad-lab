@@ -5,7 +5,7 @@
 > Afin d'assurer la sécurité de vos namespaces, assurez-vous que les pods du déploiment `fishy-pod` :
 > * utilisent le userID `10000`
 > * ne puissent pas s'exécuter en tant que `root`
-> * ont la capacité `NET_ADMIN` et de `SYS_TIME`
+> * n'ont pas la capacité `NET_ADMIN`
 
 ---
 
