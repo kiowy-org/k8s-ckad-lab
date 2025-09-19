@@ -80,7 +80,7 @@ kubectl rollout resume deploy kuard
 
 ### Exercice 3
 
-Créez un job via le fichier dans le fichier `job-oneshot.yaml`, completer le avec les informations pour executer la commande `curl` sur `https://wttr.in/Moon` puis appliquer le au cluster.
+Créez un job via le fichier `./utils/job-oneshot.yaml`, completer le avec les informations pour executer la commande `curl` sur `https://wttr.in/Moon` puis appliquer le au cluster.
 
 Inspectez votre job et vos pods (`describe`, `get` et `logs`).
 
