@@ -111,4 +111,15 @@ kubectl apply -f ./utils/example_jobs-3-consumer.yaml
 
 Que pouvez-vous déduire de l'option `-o jsonpath` ? A quoi sert-il ? 
 
+---
+
+### Exercice BONUS
+
+> [!note]
+> Resources: [CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/)
+> Image CURL: `curlimages/curl:8.16.0`
+
+1. Créer un cronjob qui execute tous les jours à 8h (crontab: `0 8 * * *`) la commande `curl` sur `https://wttr.in/`.
+2. Tester l'execution du CronJob avec un Job. (cf. `kubectl create job --help`).
+
 Section suivante, [la configuration et les secrets](5_configmaps_et_secrets.md).
