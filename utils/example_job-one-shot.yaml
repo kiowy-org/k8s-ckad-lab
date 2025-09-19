@@ -11,12 +11,8 @@ spec:
         chapter: jobs
     spec:
       containers:
-      - name: kuard
-        image: gcr.io/kuar-demo/kuard-amd64:blue
+      - name: curl
+        image: alpine/curl:3.14
         imagePullPolicy: Always
-        command: ["/kuard"]
-        args:
-         - "--keygen-enable"
-         - "--keygen-exit-on-complete"
-         - "--keygen-num-to-gen=10"
+        command: #TODO
       restartPolicy: OnFailure
