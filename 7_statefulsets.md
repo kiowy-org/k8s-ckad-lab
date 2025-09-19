@@ -38,7 +38,7 @@ Que se passe t'il si on scale notre StatefulSet ?
 
 Nous allons corriger notre statefulset, afin qu'il supporte le scaling.
 
-Supprimez d'abord votre StatefulSet de l'exercice 13.
+Supprimez d'abord votre StatefulSet de l'exercice 1.
 
 Appliquez les fichiers `./stateful_set/3_mongo_configmap.yaml` et `./stateful_set/4_mongo.yaml`.
 
