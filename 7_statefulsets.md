@@ -4,8 +4,8 @@
 
 Créez un Statefulset MongoDB.
 
-Appliquez le fichier `./stateful_set/1-mongo-simple.yaml` pour créer l'objet StatefulSet.
-Appliquez ensuite le fichier `./stateful_set/2-mongo-service.yaml` afin de créer le headless service.
+Appliquez le fichier `./stateful_set/1_mongo_simple.yaml` pour créer l'objet StatefulSet.
+Appliquez ensuite le fichier `./stateful_set/2_mongo_service.yaml` afin de créer le headless service.
 
 > [!NOTE]
 > Un [Headless service](https://kubernetes.io/fr/docs/concepts/services-networking/service/#headless-services) est un service sans Cluster IP.
@@ -40,7 +40,7 @@ Nous allons corriger notre statefulset, afin qu'il supporte le scaling.
 
 Supprimez d'abord votre StatefulSet de l'exercice 13.
 
-Appliquez les fichiers `./stateful_set/3-mongo-configmap.yaml` et `./stateful_set/4-mongo.yaml`.
+Appliquez les fichiers `./stateful_set/3_mongo_configmap.yaml` et `./stateful_set/4_mongo.yaml`.
 
 Vérifiez que votre StatefulSet a bien démarrez. Nous allons ensuite charger des données :
 
